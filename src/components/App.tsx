@@ -4,12 +4,6 @@ import styles from "./App.module.scss";
 import Outline from "./Outline";
 import Timeline from "./Timeline";
 
-const generateDummyList = (size: number, color: React.CSSProperties["backgroundColor"]) => {
-    return Array(size)
-        .fill(0)
-        .map((item) => <div style={{ height: 50, width: "100%", backgroundColor: color, marginBottom: 10 }} />);
-};
-
 const items = [
     {
         key: "panel1",

@@ -13,6 +13,7 @@ const Accordion: FC<AccordionComponent> = ({ panels }): JSX.Element => {
     const [scope, setScope] = useState<boolean>(true);
     const [currentY, setCurrentY] = useState<number>(0);
     const [dragging, setDragging] = useState<boolean>(false);
+    // eslint-disable-next-line
     const [activeIndex, setActiveIndex] = useState<number>(-1);
     const [closestActiveIndexUp, setClosestActiveIndexUp] = useState<number>(-1);
     const [closestActiveIndexDown, setClosestActiveIndexDown] = useState<number>(-1);
