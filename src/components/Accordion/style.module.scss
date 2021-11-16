@@ -1,0 +1,59 @@
+.accordion {
+  width: 30%;
+  height: 100%;
+  background-color: #252526;
+  color: #ffffff;
+  padding: 1rem 1rem 0 1rem;
+  overflow: hidden !important;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  .inner {
+    height: 95%;
+    overflow: auto;
+    // border: 1px solid firebrick;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.75em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255, 0.35);
+  }  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.75);
+  }  
+}
+
+.resize {
+  max-width: 80%;
+  min-width: 15%;
+  height: 100%;
+  overflow:auto;
+}
+
+.horizontal {
+  resize: horizontal;
+}
+
+.dividerHitbox {
+  cursor: n-resize;
+  padding: 0 0.5rem;
+}
+
+.divider {
+  height: 100%;
+  border: 2px solid rgba(128, 128, 128, 0.01);
+  border-radius: 2px;
+  &:hover {
+    border-color: rgb(128, 128, 128);
+  }
+}
